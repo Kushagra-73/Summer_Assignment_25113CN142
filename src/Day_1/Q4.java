@@ -1,4 +1,5 @@
-import javax.xml.transform.Source;
+package Day_1;
+
 import java.util.Scanner;
 
 public class Q4 {

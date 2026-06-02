@@ -1,6 +1,5 @@
-package DAY_6;
+package Day_6;
 
-import javax.naming.OperationNotSupportedException;
 import java.util.Scanner;
 
 public class Q21 {

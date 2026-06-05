@@ -5,8 +5,7 @@ import java.util.Scanner;
 public class Q18 {
 //    Write a program to Check strong number.
     public static void main(String[] args) {
-        //A strong number is a number whose value is equal 
-        // to the sum of the factorials of its digits.
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number : ");
         

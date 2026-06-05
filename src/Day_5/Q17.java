@@ -7,8 +7,7 @@ public class Q17 {
         Scanner sc = new Scanner(System.in);
 
         //Write a program to Check perfect number
-        //A perfect number is a positive integer that is
-        // equal to the sum of its proper divisors (all positive divisors excluding the number itself).
+
 
         System.out.println("Enter a number :");
         int n = sc.nextInt();

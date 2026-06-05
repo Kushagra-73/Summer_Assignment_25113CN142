@@ -3,7 +3,8 @@ package Day_5;
 import java.util.Scanner;
 
 public class Q18 {
-//    Write a program to Check strong number.
+//
+    //    Write a program to Check strong number.
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);

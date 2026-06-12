@@ -7,18 +7,49 @@ public class Q23 {
 //        Write a program to Count set bits in a number.
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number :");
-        int n = sc.nextInt();
+        System.out.println("Enter the number ");
+        float n = sc.nextInt();
 
-        int count = 0;
+        if( n <0) System.out.println("Enter positive number");
+        else{
+            int integerPart = (int) n;
+            float fractionalPart = n - integerPart;
 
-        while (n > 0) {
-            count += n % 2;
-            n = n / 2;
+            int ansInt = 0;
+            int temp = integerPart;
+
+            while(temp > 0) {
+                ansInt *= 10;
+                ansInt += temp % 2;
+                temp /= 2;
+
+            }
+
+            System.out.println(reverse(ansInt));
+            temp = ansInt;
+            int count = 0;
+            while (temp > 0){
+                if(temp % 10 == 1) count++;
+                temp /= 10;
+            }
+
+            System.out.println("The number of bits : " + count);
+
         }
 
-        System.out.println(count);
+    }
 
+    static int reverse(int num){
+        int temp = num;
+        int ans = 0;
+        while (temp > 0){
+            ans *= 10;
+            int rem = temp % 10;
 
+            ans += rem;
+            temp /= 10;
+
+        }
+        return ans;
     }
 }

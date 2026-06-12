@@ -8,7 +8,16 @@ public class Q23 {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number :");
-        int num = sc.nextInt();
+        int n = sc.nextInt();
+
+        int count = 0;
+
+        while (n > 0) {
+            count += n % 2;
+            n = n / 2;
+        }
+
+        System.out.println(count);
 
 
     }

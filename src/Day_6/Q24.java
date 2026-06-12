@@ -5,49 +5,16 @@ import java.util.Scanner;
 public class Q24 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number ");
-        float n = sc.nextInt();
+        int base = sc.nextInt();
+        int exponent = sc.nextInt();
 
-        if( n <0) System.out.println("Enter positive number");
-        else{
-            int integerPart = (int) n;
-            float fractionalPart = n - integerPart;
-
-            int ansInt = 0;
-            int temp = integerPart;
-
-            while(temp > 0) {
-                ansInt *= 10;
-                ansInt += temp % 2;
-                temp /= 2;
-
-            }
-
-            System.out.println(reverse(ansInt));
-            temp = ansInt;
-            int count = 0;
-            while (temp > 0){
-                if(temp % 10 == 1) count++;
-                temp /= 10;
-            }
-
-            System.out.println(count);
-
+        int result = 1;
+        for (int i = 1; i <= exponent; i++) {
+            result *= base;
         }
 
+        System.out.println(result);
+    }
     }
 
-    static int reverse(int num){
-        int temp = num;
-        int ans = 0;
-        while (temp > 0){
-            ans *= 10;
-            int rem = temp % 10;
-
-            ans += rem;
-            temp /= 10;
-
-        }
-        return ans;
-    }
 }

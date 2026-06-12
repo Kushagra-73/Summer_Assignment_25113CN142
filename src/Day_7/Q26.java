@@ -16,7 +16,7 @@ public class Q26 {
     static int fibonacci(int num){
         if(num == 0) return 0;
         if(num == 1) return 1;
-        int ans = fibonacci(num - 1) + + fibonacci(num - 2);
+        int ans = fibonacci(num - 1) + fibonacci(num - 2);
         return ans;
     }
 }

@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Q24 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number and exponent :");
         int base = sc.nextInt();
         int exponent = sc.nextInt();
 
@@ -15,6 +16,6 @@ public class Q24 {
 
         System.out.println(result);
     }
-    }
+
 
 }

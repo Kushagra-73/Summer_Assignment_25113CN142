@@ -5,7 +5,11 @@ import java.util.Scanner;
 public class Q40 {
     public static void main(String[] args) {
         /*
-
+            A
+           ABA
+          ABCBA
+         ABCDCBA
+        ABCDEDCBA
          */
 
         Scanner sc = new Scanner(System.in);

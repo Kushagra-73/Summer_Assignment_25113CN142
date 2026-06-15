@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Q67 {
+public class Q68 {
     public static void main(String[] args) {
-        //Write a program to Intersection of arrays.
+        //Write a program to common elements of arrays.
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the length of first array :");
         int n1 = sc.nextInt();
@@ -28,12 +28,12 @@ public class Q67 {
         }
         System.out.println("Second Array :" + Arrays.toString(arr2));
 
-        ArrayList<Integer> ans = intersection(arr1, arr2);
-        System.out.println("The intersection of arrays is :" + ans) ;
+        ArrayList<Integer> ans = common(arr1, arr2);
+        System.out.println("The common in array are :" + ans) ;
     }
 
 
-    static ArrayList<Integer> intersection(int[] arr1, int[] arr2){
+    static ArrayList<Integer> common(int[] arr1, int[] arr2){
         ArrayList<Integer> ans = new ArrayList<>();
         for(int i = 0; i < arr1.length; i++) {
             for(int j = 0; j < arr2.length; j++) {
@@ -48,3 +48,4 @@ public class Q67 {
         return ans;
     }
 }
+
